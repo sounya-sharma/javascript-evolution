@@ -1,0 +1,43 @@
+console.log('Hello, Java Script!');
+// This is a simple JavaScript file that logs a message to the console.//
+//STARTING JS NOW with a pyramid generator i.e..,A pyramid generator is a program where you can set the type of character, the count for the pyramid, and the direction of the pyramid. The program will then generate a pyramid based on those inputs.//
+ console.log('Starting Pyramid Generator...');
+ console.log("       #       ");
+ console.log("      ###      ");
+ console.log("     #####     "); 
+ console.log("    #######     ");
+ // variable vessel//
+ let class;
+ //initialization//
+ let class= 'pyramid';
+ // immutable string but variable value can be chnaged//
+ class='bca';
+//adding it to the console for output//
+let developer= "Sounya";
+console.log('developer');
+// once the value is added to the console u can re assign it without using yhe "let" keyword again//
+developer='sawnya';
+//variable constraint: camel case eg (let myClassName = "bca";)//
+let newDeveloper;
+newDeveloper = 'Sounya';//unitialization and assignment in one line
+// can swap the value of the variable by using the assignment operator//
+let newDeveloper = developer; //output of newDeveloper will be "sawnya//"
+//"number" datatype used://
+let count = 8;
+//mathematical operations are possible via console//
+console.log(count +10);  //output will be 18." *,/,- "cane be used too//
+//non primitve datatype-"Array" uses square brackets []//
+let arr = []; //empty array//
+//initialization and assignment in one line//
+let arr = ["first","second","third"];
+//to access the elements of the array, we use the index number starting from 0//
+console.log(arr[1]); //output will be "second"//)
+//arrays are mutable/changeable via index number//
+arr[1] = "newSecond"; //changing the value of the second element
+console.log(arr[1]); //output will be "newSecond"//
+// in case of unknown size of the array, we use the array.length - 1 to get to the last element of the array//
+arr[arr.lentgh - 1] = "newLast"; //changing the value of the last element
+console.log(arr[arr.length - 1]); //output will be "newLast"//
+//pusgh() method is used to add an element to the end of the array//
+arr.push("fourth"); //adding a new element to the end of the array
+console.log(arr); //output will be ["first", "newSecond", "third", "fourth"]//
