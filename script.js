@@ -41,3 +41,18 @@ console.log(arr[arr.length - 1]); //output will be "newLast"//
 //pusgh() method is used to add an element to the end of the array//
 arr.push("fourth"); //adding a new element to the end of the array
 console.log(arr); //output will be ["first", "newSecond", "third", "fourth"]//
+//the value to a variable can be reassigned by usign "let" keyword//
+let var = "old value";
+console.log(var); //output will be "old value"
+var = "new value"; //reassigning the value
+console.log(var); //output will be "new value"
+//to avoid this we use the keyword "const" which is used to declare a constant variable that cannot be reassigned//
+const newvar = "constant answer value";
+console.log(newvar); //output will be "constant answer value"//
+// a const variable cant be left uninitialized, it must be assigned a value at the time of declaration//
+//format for a loop://
+for (let iterator;condition;iterator) {
+    //code to be executed for each iteration
+}   
+//Pyramid generator//
+let character = '#'; //character to be used for the pyramid
