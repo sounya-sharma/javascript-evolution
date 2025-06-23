@@ -54,5 +54,61 @@ console.log(newvar); //output will be "constant answer value"//
 for (let iterator;condition;iterator) {
     //code to be executed for each iteration
 }   
-//Pyramid generator//
-let character = '#'; //character to be used for the pyramid
+//function//
+function name(parameter):{
+    //code to be executed
+}
+//func returning a val as well as printing a msg to the console//
+function name (parameter) {
+    return "learning functions";
+    console.log('Function executed with parameter:', parameter);
+}
+//function call//
+funcName(parameter);
+//basics to initiate the code for a pyramid generator in js//
+const character = '#'; //character to be used for the pyramid //
+const count = 8; //number of rows in the pyramid //
+const rows = []; //array to store the rows of the pyramid //
+for ( let i = 0; i < count; i = i + 1){
+    rows.push(character.repeat(i+1)); //making it start from 1 to eliminate the off-by-one error in js //
+}
+// if a function doesnt return a val it will return undefined by default //
+function pyramid(lines) {
+    return lines;
+}//can call the parameters as well which can be called to use diff values//
+//passing an argument tothe function//
+function pyramid(rows){
+    return rows;
+}
+pyramid("lines"); //lines passed as an arguement 
+//function to add two numbers//
+function addTwoNumbers(a, b){
+  return a + b ;
+}
+let sum = addTwoNumbers(5,10);
+console.log(sum); //output will be 15 
+//function can use variables which are kept outisde any blocks(global variables)//
+const title = "Professor ";
+function demo(name) {
+  return title + name;
+}
+demo("Naomi"); //output will be "Professor Naomi"
+// the return keyword stops the execution of your code inside a function or a block statement.
+// This means any code after a return statement will not run.
+function padRow(rowNumber, rowCount) { //two new paramteres added to the function to control the row number and count
+return character.repeat(rowNumber); //repeating the character "#" the "rowNumber" of times as given by the user
+}
+//pyramid generator function that takes the character, count, and direction as parameters
+function pyramidGenerator(character, count, direction) {
+  const rows = []; //array to store the rows of the pyramid
+  for (let i = 0; i < count; i++) {
+    let row = padRow(i, count); //calling the padRow function to get the row with the correct number of characters
+    if (direction === 'right') {
+      row = row.padStart(count); //right-aligning the row
+    } else if (direction === 'left') {
+      row = row.padEnd(count); //left-aligning the row
+    }
+    rows.push(row);//adding the row to the rows array
+  }
+  return rows.join('\n'); //joining the rows with a newline character
+}
